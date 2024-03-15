@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    border: 10px solid black;
+}
+.HeaderSection {
+    justify-content: space-between;
+    display: flex;
+    /* Add your styles here */
+    background-color: black;/* Example background color */
+    color: #333; /* Example text color */
+    padding: 20px; /* Example padding */
+    border-bottom: 2px solid #ccc; /* Example border */
+    /* Add more styles as needed */
+    color: white;
+    padding-top: 20px;
+}
+.center {
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inline-list {
+    display: flex;
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inline-list li {
+    margin-right: 10px; /* Adjust spacing between list items */
+}
+.left{
+    flex: 2px;
+}
+.center{
+    flex:2px;
+}
+.search{
+    flex: 3px;
+}
+.search input{
+    padding: 10px;
+    width: 20rem;
+}
+.right {
+    flex: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.bannerBox{
+    margin:5px 0px;
+}
+.bannerBox img{
+    width: 100%;
+    height: 600px;
+}
+/*.collectonSection h2 span {
+    background-color: rgb(157, 157, 206);
+}
+*/
+.collectonSection h2 {
+    margin-bottom: 10px; /* Adjust the margin-bottom value to set the desired space */
+}
+.collectonSection img{
+    margin-bottom: 20px;
+}
+.Gentsimage {
+    display: flex;
+    gap: 10px;
+}
+.Gentsimage img{
+    width: 280px;
+    height: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
